@@ -124,17 +124,7 @@
     <!-- SECTION 4: Project -->
      <section id="project" class="project-section">
       <h2>Project</h2>
-      <details>
-        <summary>Website Portofolio</summary>
-        <p>Ini adalah portofolio saya yang dibuat menggunakan HTML, CSS, dan JavaScript. Portofolio ini menampilkan keterampilan, sertifikat, dan proyek yang telah saya kerjakan. Saya menggunakan teknik responsif untuk memastikan portofolio ini dapat diakses dengan baik di berbagai perangkat.</p>
-        <a href="http://jonthorr.live" target="_blank">Visit Portfolio</a>
-        </details>
-      <details>
-        <summary>Nextcloud</summary>
-        <p>Nextcloud adalah platform open-source yang memungkinkan Anda untuk menyimpan, berbagi, dan mengelola file secara aman. Saya telah menginstal dan mengkonfigurasi Nextcloud di server saya untuk menyediakan layanan penyimpanan cloud pribadi.</p>
-        <a href="http://jonthorr.live/nextcloud" target="_blank" >Visit Nextcloud</a>
-      </details>
-
+      <p> To Be Annonced</p>
     </section>
 
 
@@ -148,20 +138,19 @@
           <p>Anda dapat menghubungi saya melalui email atau mengisi formulir ini. Saya akan berusaha untuk merespons secepat mungkin.</p>
         </div>
 
-        <form id="contact-form">
+        <form>
           <label for="name">Name</label>
-          <input type="text" id="name" name="name" required>
+          <input type="text" id="name">
 
           <label for="email">Email</label>
-          <input type="email" id="email" name="email" required>
+          <input type="email" id="email">
 
           <label for="message">Message</label>
-          <textarea id="message" name="message" cols="30" rows="10" required></textarea>
+          <textarea id="message" cols="30" rows="10"></textarea>
 
           <button type="submit">Send Message</button>
-        </form>
 
-        
+        </form>
       </div>
     </section>
   </main>
@@ -173,25 +162,4 @@
 
   </footer>
 </body>
-      <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-      <script>
-        (function(){
-          emailjs.init("XMN67v1V8mJVw5tLn"); // Public Key kamu
-        })();
-
-        document.getElementById("contact-form").addEventListener("submit", function(e) {
-          e.preventDefault();
-
-          emailjs.sendForm("daffapam321", "template_2yhqm9d", this)
-            .then(function(response) {
-              alert("✅ Pesan berhasil dikirim!");
-              console.log("SUCCESS!", response.status, response.text);
-            }, function(error) {
-              alert("❌ Gagal mengirim pesan.");
-              console.error("FAILED...", error);
-            });
-        });
-      </script>
-
-
 </html>
